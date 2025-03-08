@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jovan's Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets/icons/favicon.svg" sizes="any" type="image/svg+xml">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jovan Lopez</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jovan Lopez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <!-- <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> -->
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Jovan Lopez profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jovan Lopez</h1>
+        <p class="section__text__p2">Computer Systems Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV - Jovan Ricardo Lopez Rueda.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <!-- <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          /> -->
+          <img
+            target="_blank"
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/JovanRL')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree in Computer Systems Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm an entry-level software engineer with experience as Software Engineer Intern and Support Engineer. My skills
+              include JavaScript, React, Python, SQL, Linux, Docker, and familiarity with AWS and GCP. I'm currently learning Go and I like to read books about software engineering. I also have interests in Data Engineering and DevOps. I'm eager to grow and
+              learn more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Support engineer</h2>
+            <h2 class="company-date-sub-title">Coppel • 07/2024 - 01/2025</h2>
+            <div class="article-container">
+              <ul>
+                <li>Provided technical support and handled internal and external user incidents</li>
+                <li>Performed formatting, operating system installation and device configuration</li>
+                <li>Proactively followed up on tickets, ensuring that they were solved within the established deadlines</li>
+                <li>Configured the network system</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Intern Software Engineer</h2>
+            <h2 class="company-date-sub-title">Coppel • 09/2023 - 03/2024</h2>
+            <div class="article-container">
+              <ul>
+                <li>Developed a CRUD as part of my training, using JavaScript and PHP internal framework</li>
+                <li>Implemented a data export function, using Angular, enabling users to extract information from a web
+                page into Excel files</li>
+                <li>Gained hands-on experience in database systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Programming languages, software and tools I use</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/icons/python-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons/sql-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons/js-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons/react-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons/linux-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Linux</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons/docker-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons/git-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons/aws-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>AWS</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons/gcp-icon.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>GCP</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <p>Working on it...</p>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+
+    </section>
+    <!-- <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+      </div>
+    </section> -->
+    <footer>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="go-back" onclick="location.href='#desktop-nav'" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
