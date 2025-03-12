@@ -14,7 +14,7 @@ It is still a work in progress.
 
 ## Architecture
 
-So far, the archhitecure looks like this:
+So far, the architecture looks like this:
 
 ![Architecture diagram](architecture.png)
 
