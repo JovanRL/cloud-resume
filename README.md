@@ -16,7 +16,7 @@ It is still a work in progress.
 
 So far, the archhitecure looks like this:
 
-![Architecture diagram](architecure.png)
+![Architecture diagram](architecture.png)
 
 
 
