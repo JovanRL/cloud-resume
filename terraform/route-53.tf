@@ -89,3 +89,26 @@ resource "aws_route53_record" "validation_record" {
   zone_id = aws_route53_zone.hosted_zone.zone_id
 }
 
+
+resource "aws_route53_record" "record_jovan_cloud" {
+  zone_id = aws_route53_zone.hosted_zone.zone_id
+  name    = ""
+  type    = "A"
+  alias {
+    name                   = aws_cloudfront_distribution.cloudfront_distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.cloudfront_distribution.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
+resource "aws_route53_record" "subrecord_jovan_cloud" {
+  zone_id = aws_route53_zone.hosted_zone.zone_id
+  name    = "www"
+  type    = "A"
+  alias {
+    name                   = aws_cloudfront_distribution.cloudfront_distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.cloudfront_distribution.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
