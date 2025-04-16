@@ -8,5 +8,4 @@
 
 /terraform/terraform.tfstate.backup
 
-
-
+/terraform/terraform.tfstate
