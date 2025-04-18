@@ -129,3 +129,14 @@ resource "aws_route53_record" "validation_record_api" {
   type = each.value.type
   zone_id = data.aws_route53_zone.public.zone_id
 }
+
+resource "aws_route53_record" "record_api_jovan_cloud" {
+  zone_id = data.aws_route53_zone.public.zone_id
+  name    = aws_apigatewayv2_domain_name.api_custom_domain.domain_name
+  type    = "A"
+  alias {
+    name                   = aws_apigatewayv2_domain_name.api_custom_domain.domain_name_configuration[0].target_domain_name
+    zone_id                = aws_apigatewayv2_domain_name.api_custom_domain.domain_name_configuration[0].hosted_zone_id
+    evaluate_target_health = false
+  }
+}
