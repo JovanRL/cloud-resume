@@ -55,7 +55,13 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 8vh;
+
+  backdrop-filter: brightness(95%) opacity(100%) blur(10px);
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  position: fixed;
 }
 
 .nav-links {
