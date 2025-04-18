@@ -31,6 +31,7 @@ resource "aws_iam_role_policy" "lambda_dynamo_policy" {
                 "dynamodb:PutItem",
                 "dynamodb:Query",
                 "dynamodb:Scan",
+                "dynamodb:DescribeTable",
                 "dynamodb:UpdateItem"
             ],
             "Effect": "Allow",
