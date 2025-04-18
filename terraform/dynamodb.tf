@@ -2,6 +2,7 @@ resource "aws_dynamodb_table" "visitsDB" {
   name             = "visits"
   hash_key         = "userID"
   billing_mode     = "PAY_PER_REQUEST"
+  range_key        = "visitDate"
 
   attribute {
     name = "userID"
