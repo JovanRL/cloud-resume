@@ -372,11 +372,8 @@ section {
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 3em;
+.experience-details-container > .about-containers {
+  display: block;
 }
 
 
