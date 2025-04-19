@@ -509,6 +509,19 @@ li {
   height: 2.5rem;
 }
 
+/* COUNTER SECTION*/
+
+#counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-visits {
+  font-size: small;
+}
+
+
 /* FOOTER SECTION */
 
 footer {
