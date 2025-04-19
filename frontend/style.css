@@ -318,6 +318,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .about-containers,
@@ -354,7 +355,7 @@ section {
 }
 
 .text-container {
-  max-width: 900px;
+  max-width: 700px;
   word-wrap: break-word;
 }
 
