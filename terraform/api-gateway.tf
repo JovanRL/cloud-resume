@@ -2,6 +2,13 @@ resource "aws_apigatewayv2_api" "visits_api" {
   provider = aws.east
   name                       = "visits-api"
   protocol_type              = "HTTP"
+
+    cors_configuration {
+    allow_origins = ["*"]
+    allow_methods = ["POST", "GET"]
+    allow_headers = ["content-type"]
+    max_age = 300
+  }
 }
 
 resource "aws_apigatewayv2_stage" "staging" {
