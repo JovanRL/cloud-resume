@@ -452,11 +452,6 @@ li {
   position: relative;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
 .project-img {
   border-radius: 2rem;
   width: 90%;
@@ -464,8 +459,8 @@ li {
 }
 
 .project-title {
-  margin: 1rem;
-  color: black;
+  font-weight: 600;
+  font-size: 1.75rem;
 }
 
 .project-btn {
