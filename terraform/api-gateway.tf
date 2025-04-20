@@ -6,7 +6,7 @@ resource "aws_apigatewayv2_api" "visits_api" {
     cors_configuration {
     allow_origins = ["*"]
     allow_methods = ["POST", "GET"]
-    allow_headers = ["content-type"]
+    allow_headers = ["Content-Type", "Access-Control-Allow-Origin"]
     max_age = 300
   }
 }
