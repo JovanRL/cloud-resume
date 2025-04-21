@@ -3,7 +3,7 @@ name: Deploy site to AWS S3 bucket
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
       id-token: write
