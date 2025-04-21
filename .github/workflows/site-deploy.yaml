@@ -1,0 +1,31 @@
+name: Deploy site to AWS S3 bucket
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+      id-token: write
+      contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: aws
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ vars.AWS_REGION }}
+
+    - name: Deploy to AWS S3 bucket
+      run: aws s3 sync frontend/ s3://jovan.cloud/ --delete
+    - name: Invalidate CloudFront Cache
+      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.DIST_ID }} --paths '/*'
