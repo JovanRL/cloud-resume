@@ -5,14 +5,30 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+const URL = "https://api.jovan.cloud/visits";
 
 const visits = document.getElementsByClassName("visits")[0]
 
-async function getData() {
-  const url = "https://api.jovan.cloud/visits";
+async function sentData() {
 
   try {
-    const response = await fetch(url);
+    const response = await fetch(URL, { method: "POST" })
+
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+sentData()
+
+async function getData() {
+
+  try {
+    const response = await fetch(URL);
     
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
