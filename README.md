@@ -22,5 +22,6 @@ So far, the architecture looks like this:
 
 ## Future Improvements
 
-- Add a visitor counter to the site
-- Implement a CI/CD pipeline to enhance the development process
+- [x]  Add a visitor counter to the site
+- [x]  Implement a CI/CD pipeline to enhance the development process
+- [ ]  Add a weakly/monthly visit counter
