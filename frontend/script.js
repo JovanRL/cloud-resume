@@ -36,12 +36,12 @@ async function getData() {
     
     const data = await response.json();
 
-    visits.innerHTML = `This page has been visited ${data} times`
+    visits.innerHTML = `${data} visits`
 
   } catch (error) {
     console.error(error.message);
-    visits.innerHTML = `This page has been visited, at least, 5 times`
+    visits.innerHTML = `This page has been visited, at least, 476 times`
   }
 }
 
-getData()
+//getData()
